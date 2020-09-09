@@ -1,9 +1,7 @@
 ### Site Settings ###
 title               : Vijay Raghavan
 description         : >-
-                      "I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production."
+  Software Engineer and Aspiring Product Manager.
 baseurl             : "/"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 #repository          : vijay-raghav/vijay-raghav.github.io    # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -19,7 +17,6 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - documentation/partials/**                           # For Documentation Only
 
 
 ### Author Info ###
@@ -47,7 +44,7 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
+#permalink: /blog/:title
 
 
 ### Collections ###
@@ -69,17 +66,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: false                                   # Set to true to enable disqus comments
+      layout: "page"                                  # Set to true to enable disqus comments
 
 ### Exclude from processing ###
 exclude:
