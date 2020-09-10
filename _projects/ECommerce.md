@@ -1,8 +1,8 @@
 ---
-name: Innovation India
+name: Ecommerce case study
 #tools: [nothing, important]
 image: https://www.sketchappsources.com/resources/source-image/project-neon-groove-music-ui.png
-description: Pitched a novel model for establishing a Think Tank to improve the Indian startup ecosystem.
+description: Case study on e commerce in india
 ---
 # B3ike - A circular economy based EV model
 
@@ -14,5 +14,8 @@ Key goals include \\
 2) Studying the co-evolution society and technology \\
 3) Actively collaborating with the government, International community for Policy making and Advocacy.
 
-
-<p class="text-center"><iframe class="text-center" src="https://docs.google.com/presentation/d/e/2PACX-1vQ3ouveq-Y_8VYcGzNS0EWu5wF_W321RGz5FPNk22MSdk1a2mgdyCu8oWNG23SIsA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+<link rel="stylesheet" href="../assets/style.css">
+<div class="google-slides-container">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vS7VRVhfOKmbeQ1DluSD1qT9EY-ZY82-KYieT6nEDkb_4fEVf1C7q_CVzlJVRW7SA4YxPCV9UHk3mI4/pub?embedded=true">
+    </iframe>
+ </div>
