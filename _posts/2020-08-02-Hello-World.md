@@ -14,4 +14,4 @@ I've always wanted to write, but I guess one does get carried away with stuff. J
 
 
 But hey this is 2020, a whole new era and the year of the newsletter. Is blogging dead? Probably. 
-I've decided to pen my thoughts here while I cut down on my substack subscriptions - my inbox is filling up.
+I've decided to pen my thoughts here while I cut down on my substack subscriptions which are filling up my Inbox (I'm upto 12 gigs on my Google Account).
