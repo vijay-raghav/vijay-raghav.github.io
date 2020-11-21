@@ -1,7 +1,6 @@
 ---
 name: Ecommerce case study
 #tools: [nothing, important]
-image: https://www.sketchappsources.com/resources/source-image/project-neon-groove-music-ui.png
 description: Case study on e commerce in india
 ---
 # B3ike - A circular economy based EV model
