@@ -1,17 +1,12 @@
 ---
-name: Ecommerce case study
+name: Flipkart - A case study
 #tools: [nothing, important]
-description: Case study on e commerce in india
+image: https://bsmedia.business-standard.com/_media/bs/img/article/2018-12/29/full/1546023702-8792.jpg
+description: Case study on Flipkart and the Indian e-Commerce ecosystem
 ---
-# B3ike - A circular economy based EV model
+# Flipkart - A case study
 
-
-
-Pitched a novel model for establishing a Think Tank to improve the Indian startup ecosystem.
-Key goals include \\
-1) Driving Technology development \\
-2) Studying the co-evolution society and technology \\
-3) Actively collaborating with the government, International community for Policy making and Advocacy.
+This case study explores the stellar rise of Flipkart, one of the the largest online marketplaces in India. Our submission received the Honorable Mention Award at the [World Asian Case Competition 2019](http://www.aabworld.org/activities/International_competition.php?ckattempt=1).
 
 <link rel="stylesheet" href="../assets/style.css">
 <div class="google-slides-container">

@@ -1,13 +1,12 @@
 ---
-name: B3ike - A circular economy based EV model 
+name: B3ike - A circular economy based model for EVs
 #tools: [nothing, important]
 image: ../assets/images/B3Ike.png
 description: B3ike is a circular economy based EV ride-sharing service. We propose a model for adoption of EVs at scale in the Indian market.
 ---
-# B3ike - A circular economy based EV model
+# B3ike - A circular economy based model for EVs
 
-
-Electric vehicles with circular economy
+B3ike is a circular economy based model for EVs that addresses the different challenges (technology, business and infrastructure) to drive widespread adoption of EVs in India.
 
 <link rel="stylesheet" href="../assets/style.css">
 <div class="google-slides-container">
