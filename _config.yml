@@ -23,11 +23,11 @@ nav_exclude:                                            # The following paths ar
 author:
   name              : Vijay Raghavan
   image             : ../assets/images/profilepic.jpg
-#  behance           : your_username
+  behance           : vijayr9
 # dribbble          : your_username
-# email             : username@domain.com
+# email             : vijaysgr8@gmail.com
 #  facebook          : your_username
-  github            : vijay_raghav
+  github            : vijay-raghav
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
@@ -38,7 +38,7 @@ author:
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
-  twitter           : anon108er
+# twitter           : anon108er
 # vimeo             : your_username
 # youtube           : your_channel_name
 
