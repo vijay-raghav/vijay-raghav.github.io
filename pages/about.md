@@ -7,7 +7,7 @@ weight: 3
 
 # **About Me**
 
-Hi I am **Vijay** :wave:, currently a Software Engineer with a knack for all things product and analytics. I graduated in 2019 with a dual degree with distinction in Computer Engineering with a focus on design and product management from [IIITDM](http://iiitdm.ac.in/). 
+Hi I am **Vijay** :wave:, currently a Product Manager with a knack for consumer apps. I graduated in 2019 with a dual degree with distinction in Computer Engineering with a focus on design and product management from [IIITDM](http://iiitdm.ac.in/). 
 
 In the past year or so, I've been reading about investing, and have been actively participating in the markets. My favorite books on investing, finance and the economy include [The Intelligent Investor](https://en.wikipedia.org/wiki/The_Intelligent_Investor), [Fault Lines](https://en.wikipedia.org/wiki/Fault_Lines:_How_Hidden_Fractures_Still_Threaten_the_World_Economy), [Capital in the Twenty-First Century](https://en.wikipedia.org/wiki/Capital_in_the_Twenty-First_Century).
 
