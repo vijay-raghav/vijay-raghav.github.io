@@ -1,9 +1,7 @@
-# What is App Store Optimization and Why You Should care
-
- Picture this, you've spent months on research and development and finally launch your app on the app store. You spend your marketing $ on ads on different channels (social media, web etc.), but all of that without consideration of how app stores work would be half baked. _Distribution matters as much as the product._
+Picture this, you've spent months on research and development and finally launch your app on the app store. You spend your marketing $ on ads on different channels (social media, web etc.), but all of that without consideration of how app stores work would be half baked. _Distribution matters as much as the product._
  
- In the context of product management, there are popular frameworks like [AIDA](https://en.wikipedia.org/wiki/AIDA_(marketing)) or [AIDAOR](https://www.alexandercowan.com/animating-user-acquisition-with-storyboards-in-6-steps/) - the first step of which is "Attention" or how you get your target user's attention. 
- Just like Search Engine Optimization (SEO), which aims to increase web traffic to your website from search engines, App Store Optimization (ASO) refers to the process of increasing your app's visibility and organic reach on an app store. ASO is an important part of reducing your app's cost of acquisition (CAC).
+In the context of product management, there are popular frameworks like [AIDA](https://en.wikipedia.org/wiki/AIDA_(marketing)) or [AIDAOR](https://www.alexandercowan.com/animating-user-acquisition-with-storyboards-in-6-steps/) - the first step of which is "Attention" or how you get your target user's attention. 
+Just like Search Engine Optimization (SEO), which aims to increase web traffic to your website from search engines, App Store Optimization (ASO) refers to the process of increasing your app's visibility and organic reach on an app store. ASO is an important part of reducing your app's cost of acquisition (CAC).
 
 
 Before we get into the details, it is important to understand how app stores broadly work.
