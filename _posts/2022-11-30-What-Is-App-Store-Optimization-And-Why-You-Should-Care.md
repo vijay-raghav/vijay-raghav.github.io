@@ -63,8 +63,6 @@ Apple has also provided guidance in terms of the user experience when prompting 
 
 For iOS, showing this prompt is limited to three occurrences per app within a 365 day period so it's important to be careful while implementing this feature. Similarly, Google Play has a quota system in place to limit how often a user can be shown the review dialog.
 
-## Case in point : The USGA Championships app
-
 
 ### Recommendations : 
 - Implement in app update to allow users to rate the app. This can be triggered when the user has opened the app during the tournament, or favorites a player or scrolls through the feed.
