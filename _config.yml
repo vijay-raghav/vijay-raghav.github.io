@@ -1,7 +1,6 @@
 ### Site Settings ###
 title               : Vijay Raghavan
-description         : >-
-  Building useful things with AI, data, and a lot of curiosity.
+description         : Building useful things with AI, data, and a lot of curiosity.
 baseurl             : "/"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : vijay-raghav/vijay-raghav.github.io    # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
