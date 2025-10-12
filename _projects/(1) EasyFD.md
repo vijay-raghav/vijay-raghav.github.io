@@ -6,6 +6,8 @@ description: Reimagining fixed deposits for India
 ---
 # EasyFD - Reimagining fixed deposits for India
 \\
+Note : this is a project from 4 years ago when I was still learning design, so my visual design skills have improved
+Nevertheless here goes.
 Sometime last year, I opened a fixed deposit to stash some of my savings with my bank and had this thought : 
 interest rates have hit record lows, considering inflation and taxes - fixed deposits are a losing proposition. 
 Then I read about corporate FDs that were offering 8+% interest rates (not without the risks though), but there was no simple way to book them - there was a lot of paperwork required and the hassle didn't seem worth it.
@@ -59,5 +61,3 @@ I thought, why not conceptualise an app exclusively (at least at the moment!) fo
 Checkout the whole project on my Behance [here](https://www.behance.net/gallery/111635803/EasyFD-A-concept-fixed-deposit-booking-app)! 
 
 ![EasyFDBanner](../assets/images/EasyFD.png)
-
-
