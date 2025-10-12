@@ -52,7 +52,7 @@ Here's the workflow for in app reviews on Android from the [documentation](https
 
 For iOS here's how it looks, from the [documentation](https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/ratings-and-reviews/) :
 
-![App Store In app review|286x518](https://developer.apple.com/design/human-interface-guidelines/ios/images/AppRating_2x.png)
+![App Store In app review](https://docs-assets.developer.apple.com/published/7cc45797257cd9637f10a5879097a09e/indicators-rating~dark%402x.png)
 
 
 Apple has also provided guidance in terms of the user experience when prompting users to review your app.
