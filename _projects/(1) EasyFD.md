@@ -2,9 +2,9 @@
 name: EasyFD
 tools: [FinTech, Product Design, Mobile App, UX Research]
 image: ../assets/images/EasyFD.png
-description: Reimagining fixed deposits for India
+description: A Product Discovery Case Study Reimagining fixed deposits for India
 ---
-# EasyFD: Reimagining Fixed Deposits for India
+# Product Case Study: EasyFD - Reimagining Fixed Deposits for India
 \
 Note: This is a project from 4 years ago when I was still learning design, so my visual design skills have improved.
 Nevertheless, here goes.

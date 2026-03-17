@@ -2,9 +2,9 @@
 name: RiskAtlas
 tools: [AI, Supply Chain Tech, Predictive Analytics, Graph Visualization]
 image: ../assets/images/risk-atlas.png
-description: A predictive multi-tier Supply Chain Risk Management engine with AI-powered incident triage.
+description: A Product Prototype for a predictive multi-tier Supply Chain Risk Management engine with AI-powered incident triage.
 ---
-# RiskAtlas: AI-Powered Supply Chain Visibility & Impact Analysis
+# Product Case Study: RiskAtlas - AI-Powered Supply Chain Visibility & Impact Analysis
 
 **Live Demo:** [https://riskatlas-prodhacks.lovable.app/](https://riskatlas-prodhacks.lovable.app/)
 

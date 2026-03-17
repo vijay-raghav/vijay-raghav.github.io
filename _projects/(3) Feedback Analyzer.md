@@ -4,7 +4,7 @@ tools: [AI, Serverless, Product Management, Analytics Dashboard]
 image: ../assets/images/feedback-analyzer.png
 description: An Intelligent Feedback Analysis Engine built for Product Managers.
 ---
-# Feedback Analyzer: Turning Raw User Input into Actionable Product Insights
+# Product Case Study: Feedback Analyzer - Turning Raw User Input into Actionable Insights
 
 As a Product Manager, parsing through hundreds of scattered user feedback tickets (from Twitter, support emails, and Discord) is an operational nightmare. The **Feedback Analyzer** is a serverless, AI-powered ingestion engine and dashboard that I built to automate this process, allowing PMs to spend less time categorizing issues and more time solving the *right* problems.
 

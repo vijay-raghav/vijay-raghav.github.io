@@ -2,8 +2,10 @@
 name: Strava Club Arena
 tools: [Consumer Social, Product Strategy, AI / ML, Interactive Prototype]
 image: ../assets/images/strava-club-arena.png
-description: A Product Discovery and GTM strategy pitch for a new B2B2C feature on Strava.
+description: A Product Management Case Study involving Product Discovery and GTM strategy pitch for a new B2B2C feature on Strava.
 ---
+
+# Product Strategy Case Study: Strava Club Arena
 
 ### The Context
 

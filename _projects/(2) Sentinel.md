@@ -2,9 +2,9 @@
 name: Sentinel
 tools: [AI Agents, FinTech, Compliance Tech, Full-Stack]
 image: ../assets/images/tartan-hacks.png
-description: The Autonomous AI Adjudication Agent for Financial Compliance 
+description: An AI Product Prototype for The Autonomous AI Adjudication Agent for Financial Compliance 
 ---
-# Sentinel: The Autonomous AML Adjudication Agent
+# AI Product Case Study: Sentinel Autonomous AML Adjudication Agent
 
 **Live Demo:** [https://sentinel-pi-steel.vercel.app/](https://sentinel-pi-steel.vercel.app/) *(Note: May be temporarily unavailable due to API limits)*
 
