@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by yousinix
+  Free for personal and commercial use under the MIT license
+  https://github.com/yousinix/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sentinel">
+  <meta property="og:description" content="The Autonomous AI Adjudication Agent for Financial Compliance">
+  <meta property="og:image" content="../assets/images/tartan-hacks.png">
+
+  <title>Sentinel</title>
+  <meta name="description" content="The Autonomous AI Adjudication Agent for Financial Compliance">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Vijay Raghavan</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="sentinel-the-autonomous-aml-adjudication-agent">Sentinel: The Autonomous AML Adjudication Agent</h1>
+
+<p><strong>Live Demo:</strong> <a href="https://sentinel-pi-steel.vercel.app/">https://sentinel-pi-steel.vercel.app/</a> <em>(Note: May be temporarily unavailable due to API limits)</em></p>
+
+<h3 id="slide-deck">Slide Deck</h3>
+<iframe src="https://pitch.com/embed-link/82jp48" allow="fullscreen; clipboard-write" allowfullscreen="" width="100%" height="500" style="border:0; margin-top: 10px; margin-bottom: 20px;"></iframe>
+
+<p><em>Built At Tartan Hacks 2026. Sentinel is an AI-powered “Compliance Co-Pilot” that automates the adverse media screening process for financial institutions.</em></p>
+
+<h3 id="the-problem-it-solves">The Problem It Solves</h3>
+
+<ul>
+  <li><strong>The Efficiency Crisis</strong>: Financial institutions spend billions annually on compliance, yet <strong>95-99% of transaction alerts are “False Positives.”</strong> Analysts waste hours manually Googling names (e.g., “John Smith”) to confirm that their 24-year-old student client isn’t the 50-year-old money launderer in the news.</li>
+  <li><strong>The Risk of Hallucination</strong>: Standard GenAI chat tools often hallucinate non-existent news or make flawed identity guesses, creating massive regulatory liabilities.</li>
+  <li><strong>Operational Burnout</strong>: The sheer volume of manual verification leads to “alert fatigue,” causing analysts to miss actual financial crimes.</li>
+</ul>
+
+<h3 id="the-solution-a-deterministic-reasoning-engine">The Solution: A Deterministic Reasoning Engine</h3>
+
+<p>Unlike basic LLM wrappers, <strong>Sentinel</strong> acts as an autonomous Adjudication Engine. It ingests customer profiles from Capital One’s Nessie API, scans the live web for negative news using <strong>Model Context Protocol (MCP)</strong> tools, and autonomously adjudicates whether the subject in the news is actually the bank’s client using strict negative constraint logic.</p>
+
+<h3 id="technical-agentic-architecture">Technical Agentic Architecture</h3>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+<div class="mermaid" style="display: flex; justify-content: center; margin-bottom: 2rem;">
+graph TD
+    UI[Next.js Workbench UI]
+    API[FastAPI Gateway]
+    Engine{Dedalus Agent Runner}
+    CapitalOne[(Capital One Nessie API)]
+    Exa[Exa Search MCP]
+    LLM[Anthropic LLM]
+    SSE[SSE Handler]
+
+    UI -- "1. Start Adjudication" --&gt; API
+    API -- "2. Initiate Workflow" --&gt; Engine
+    
+    Engine &lt;--&gt;|"3. Retrieve Client Profile"| CapitalOne
+    Engine &lt;--&gt;|"4. Scrape Live Web"| Exa
+    Engine &lt;--&gt;|"5. Apply Constraint Logic"| LLM
+    
+    Engine -- "6. Stream Monologue" --&gt; SSE
+    SSE -- "7. Real-Time Updates" --&gt; UI
+    Engine -- "8. Structured JSON Verdict &amp; SAR" --&gt; UI
+
+    style Engine fill:#f9d0c4,stroke:#333,stroke-width:2px
+    style CapitalOne fill:#bfe6ff,stroke:#333
+    style Exa fill:#bfe6ff,stroke:#333
+    style LLM fill:#bfe6ff,stroke:#333
+    style UI fill:#e1f7d5,stroke:#333
+    style API fill:#e1f7d5,stroke:#333
+</div>
+
+<p>The application is built around a true agentic workflow where various modular systems communicate to achieve an autonomous adjudication vertex. The core intelligence is driven by a <strong>single, multi-phase agent</strong> orchestrated by the Dedalus SDK, rather than a complex multi-agent system.</p>
+
+<h4 id="the-3-phase-single-agent-workflow">The 3-Phase Single-Agent Workflow</h4>
+<p>By examining the <code class="language-plaintext highlighter-rouge">SYSTEM_PROMPT</code> running within the FastAPI backend, we designed the agent to transition sequentially through three distinct personas within a single API call:</p>
+
+<ol>
+  <li><strong>Phase 1: The Researcher (High Recall):</strong> The agent begins by using the <strong>Capital One Customer Information API</strong> (Nessie) to retrieve the client’s detailed profile (Age, Location, Account History). It then calls the <strong>Exa Web Search MCP</strong> to query the live internet for adverse media. Crucially, the prompt constrains the search here to <em>only</em> use the client’s name and risk keywords (avoiding overly specific queries that might drop real news).</li>
+  <li><strong>Phase 2: The Analyst (The Filter):</strong> Armed with full article contents scraped by Exa, the agent shifts from recalling data to filtering it. It applies the “Negative Constraint Logic”: it assumes the subject in the news is a <em>different person</em> until proven otherwise. If it detects a variance—such as a 5-year age gap or a location mismatch between the Nessie profile and the news article—it aggressively throws the result out. It also enforces a “Zero-Result Guardrail,” forcing a manual review if no data is found, preventing the agent from falsely clearing a user based on internal model hallucination.</li>
+  <li><strong>Phase 3: The Judge (The Verdict):</strong> Finally, the agent evaluates the remaining filtered data against a strict scoring rubric to arrive at a definitive JSON Risk Verdict (Escalate vs. Dismiss), automatically drafting a highly-structured Suspicious Activity Report (SAR) with required URL citations.</li>
+</ol>
+
+<h4 id="why-a-single-agent-architecture">Why a Single-Agent Architecture?</h4>
+<p>We deliberately chose a Single-Agent, Multi-Phase approach over a Multi-Agent system (e.g., separate LLMs acting as Researcher, Analyst, and Judge) for three core reasons:</p>
+
+<ul>
+  <li><strong>Latency:</strong> In compliance adjudication, speed is critical. Passing context back and forth between multiple separate agents introduces massive latency overhead via repeated network calls. Streaming the entire reasoning loop from a single advanced model (Claude Opus) drastically reduces time-to-verdict.</li>
+  <li><strong>Context Retention:</strong> A single agent maintains a flawless native context window. The “Judge” inherently knows exactly <em>why</em> the “Researcher” formulated its specific Exa search query, eliminating the need to summarize and compress state between agent handoffs.</li>
+  <li><strong>Deterministic Control:</strong> By rigidly structuring a single system prompt into distinct sequential phases bound by strict rules (like the Zero-Result Guardrail), we achieve the predictability and transparency required by financial regulators, avoiding the unpredictable conversational loops that multi-agent systems often fall into. We originally considered a complex multi-agent system, but it proved too unpredictable and introduced too much latency. Defaulting to a single-agent, multi-phase prompt was a deliberate choice to maintain tight, deterministic control.</li>
+</ul>
+
+<h4 id="real-time-streaming-sse-to-the-ui">Real-Time Streaming (SSE) to the UI</h4>
+<p>As this 3-Phase engine executes, it streams its “inner monologue” (tool calls, search results, and reasoning) through a Server-Sent Events (SSE) Handler back to the <strong>Next.js Workbench UI</strong>. This transparency allows the human analyst to see exactly <em>how</em> the AI is reaching its conclusion in real time, ultimately delivering a ready-to-file SAR framework updating the React State.</p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by
+    <strong>Vijay Raghavan</strong>
+  </small>
+  <div class="container-fluid justify-content-center"><a
+    class="social mx-1"
+    href="https://www.linkedin.com/in/vijayraghavans"
+    style="color: #6c757d"
+    onMouseOver="this.style.color='#007bb5'"
+    onMouseOut="this.style.color='#6c757d'"
+  >
+    <i class="fab fa-linkedin-in fa-1x"></i>
+  </a>
+</div>
+
+</footer>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
