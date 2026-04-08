@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by yousinix
+  Free for personal and commercial use under the MIT license
+  https://github.com/yousinix/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Feedback Analyzer">
+  <meta property="og:description" content="An Intelligent Feedback Analysis Engine built for Product Managers.">
+  <meta property="og:image" content="../assets/images/feedback-analyzer.png">
+
+  <title>Feedback Analyzer</title>
+  <meta name="description" content="An Intelligent Feedback Analysis Engine built for Product Managers.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Vijay Raghavan</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="product-case-study-feedback-analyzer---turning-raw-user-input-into-actionable-insights">Product Case Study: Feedback Analyzer - Turning Raw User Input into Actionable Insights</h1>
+
+<p>As a Product Manager, parsing through hundreds of scattered user feedback tickets (from Twitter, support emails, and Discord) is an operational nightmare. The <strong>Feedback Analyzer</strong> is a serverless, AI-powered ingestion engine and dashboard that I built to automate this process, allowing PMs to spend less time categorizing issues and more time solving the <em>right</em> problems.</p>
+
+<h3 id="the-core-problem">The Core Problem</h3>
+
+<p>Through personal PM experience, I realized feedback often gets lost in unmonitored Slack channels, meeting notes, and scattered documents. This validated my core assumption: <em>speed to triage is far more crucial than the speed to fix</em>. The goal was separating signal from noise.</p>
+
+<ol>
+  <li><strong>Siloed Data:</strong> Feedback comes from a multitude of disparate channels, making it difficult to get a holistic view of user sentiment.</li>
+  <li><strong>Manual Triage is Unscalable:</strong> Reading, categorizing, and scoring the urgency of every piece of feedback manually creates massive bottlenecks.</li>
+  <li><strong>Losing the Forest for the Trees:</strong> It’s hard to identify recurring themes or semantic similarities (e.g., “cannot log in” vs “auth is broken”) using traditional keyword searches.</li>
+</ol>
+
+<h3 id="the-solution-an-intelligent-ingestion-pipeline">The Solution: An Intelligent Ingestion Pipeline</h3>
+
+<p>I initially considered “out-of-the-box” AI Search models but realized they were optimized for static documents, not structured data streaming. Therefore, I designed a completely custom serverless architecture using <strong>Cloudflare’s Developer Platform</strong> that instantly ingests, processes, and visualizes feedback in real-time.</p>
+
+<ul>
+  <li><strong>Smart Orchestration via Workflows:</strong> Instead of keeping users waiting, feedback is ingested via an API that triggers a background <code class="language-plaintext highlighter-rouge">Cloudflare Workflow</code>. This ensures zero dropped requests, even during massive spikes in feedback volume.</li>
+  <li><strong>Parallel AI Processing:</strong> Inside the workflow, the text runs through two AI models simultaneously:
+    <ul>
+      <li><strong>LLaMa-3 (Meta):</strong> Instructed as a strict data classifier to extract a concise summary, categorize the issue (e.g., Bug, Feature Request, Billing), determine sentiment, and assign an Urgency Score (1-5).</li>
+      <li><strong>BGE-Base (Embedding Model):</strong> Converts the raw text into a high-dimensional vector to capture its conceptual meaning.</li>
+    </ul>
+  </li>
+  <li><strong>Semantic Search &amp; Analytics:</strong>
+    <ul>
+      <li>The structured metadata (Summary, Category, Urgency) is stored in <strong>Cloudflare D1</strong> (SQL) to power a real-time analytics dashboard showcasing Top Categories, Critical Issues, and Sentiment splits.</li>
+      <li>The vector embeddings are stored in <strong>Cloudflare Vectorize</strong>, allowing PMs to perform powerful <em>semantic searches</em> (e.g., searching for “login difficulties” will surface tickets that use entirely different wording but mean the same thing).</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="product-impact--execution">Product Impact &amp; Execution</h3>
+
+<p>By leveraging a serverless architecture, this tool effectively demonstrates how modern AI can be moved out of the “chatbot” phase and embedded directly into backend data pipelines.</p>
+
+<p><strong>Algorithmic Guardrails:</strong>
+Automating triage with LLMs introduces risks like hallucination and bias. To mitigate this in a production environment, I implemented two safeguards: <strong>Confidence Thresholds</strong> (if the AI’s confidence score is &lt;70%, the item is flagged for mandatory Human Review) and <strong>Strict Enums</strong> (forcing the model to output a predefined category to prevent data pollution).</p>
+
+<p><strong>Defining Success (Metrics):</strong></p>
+<ul>
+  <li><strong>Triage Time Reduction:</strong> The decrease in time between “Feedback Received” and “Ticket Created in Jira / Engineering Tracker.”</li>
+  <li><strong>Deflection Rate:</strong> The percentage of queries answered via the semantic “Search” feature (finding existing solutions) without needing a new human response.</li>
+  <li><strong>Operational Efficiency:</strong> Automating categorization and assigning an urgency score ensures that Critical (Level 5) issues (like payment failures) are surfaced to the top of the dashboard immediately.</li>
+  <li><strong>Cost-Effective Scalability:</strong> By utilizing Cloudflare Workers, the platform scales infinitely from zero, meaning you only pay for the exact compute milliseconds used during ingestion.</li>
+</ul>
+
+<p><em>Built as part of a product assignment for Cloudflare.</em></p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by
+    <strong>Vijay Raghavan</strong>
+  </small>
+  <div class="container-fluid justify-content-center"><a
+    class="social mx-1"
+    href="https://www.linkedin.com/in/vijayraghavans"
+    rel="me"
+    style="color: #6c757d"
+    onMouseOver="this.style.color='#007bb5'"
+    onMouseOut="this.style.color='#6c757d'"
+  >
+    <i class="fab fa-linkedin-in fa-1x"></i>
+  </a>
+</div>
+
+</footer>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

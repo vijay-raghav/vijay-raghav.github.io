@@ -1,15 +1,17 @@
 ### Site Settings ###
-title               : Vijay Raghavan
-description         : >-
-  Product Manager.
-baseurl             : "/"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-#repository          : vijay-raghav/vijay-raghav.github.io    # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+title               : Vijay Raghavan | AI Product Manager
+description         : Vijay Raghavan is an AI-native Product Manager specializing in GenAI, data, and multi-agent workflows. View my portfolio and product case studies.
+url                 : "https://vijay-raghav.github.io"
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : vijay-raghav/vijay-raghav.github.io    # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 
 
 ### Plugins ###
 plugins:
   - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 
 ### Navbar Settings ###
@@ -23,11 +25,11 @@ nav_exclude:                                            # The following paths ar
 author:
   name              : Vijay Raghavan
   image             : ../assets/images/profilepic.jpg
-  behance           : vijayr9
+# behance           : vijayr9
 # dribbble          : your_username
-# email             : vijaysgr8@gmail.com
-#  facebook          : your_username
-#  github            : vijay-raghav
+  email             : vijaysgr8@gmail.com
+# facebook          : your_username
+  github            : vijay-raghav
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
@@ -60,7 +62,7 @@ collections:
 
 
 ### Disqus ###
-disqus: your-short-name-disqus                          # Your website Shortname on disqus
+#disqus: your-short-name-disqus                          # Your website Shortname on disqus
 
 
 ### Defaults for collections ###

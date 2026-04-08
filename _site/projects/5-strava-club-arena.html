@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by yousinix
+  Free for personal and commercial use under the MIT license
+  https://github.com/yousinix/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Strava Club Arena">
+  <meta property="og:description" content="A Product Discovery and GTM strategy pitch for a new B2B2C feature on Strava.">
+  <meta property="og:image" content="../assets/images/strava-club-arena.png">
+
+  <title>Strava Club Arena</title>
+  <meta name="description" content="A Product Discovery and GTM strategy pitch for a new B2B2C feature on Strava.">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Vijay Raghavan</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h3 id="the-context">The Context</h3>
+
+<p>During one of my courses at Carnegie Mellon, a user segmentation exercise challenged me to identify an underserved cohort within a mature, high-scale product. That’s when a massive opportunity within Strava struck me: analysts typically view the total addressable market as individual athletes, but the rapidly expanding ecosystem of clubs represents a distinct, highly actionable growth segment of its own.</p>
+
+<ul>
+  <li><strong>The Observation:</strong> Strava’s growth engine brilliantly leverages individual storytelling and peer-to-peer validation. However, the platform currently underutilizes collective team dynamics. Gen Z is now the fastest-growing demographic on the platform, and their behavior reveals a fundamental shift away from passive social media and toward in-person, organized fitness communities. Reflecting this cultural wave, the number of new clubs created on the platform nearly quadrupled in 2025, pushing the total number of Strava Clubs past the <strong>1 million mark</strong>.</li>
+  <li><strong>The Gap:</strong> Despite this massive sociological shift, Strava’s core competitive infrastructure—the Segment leaderboard—remains fiercely individual. This leaves over 1 million active digital clubs without a native, gamified way to compete collectively against one another, representing a massive untapped opportunity for both community engagement and B2B monetization.</li>
+</ul>
+
+<h3 id="the-strategic-framework--business-problem">The Strategic Framework &amp; Business Problem</h3>
+
+<ul>
+  <li><strong>User Desirability (Tribal Motivation):</strong> Single-player activity tracking gets lonely. This feature aligns with the massive cultural shift of users seeking organized, in-person fitness communities, giving over one million active clubs a compelling native reason to engage daily through a visceral, head-to-head competition mechanism.</li>
+  <li><strong>Business Viability (B2B Monetization):</strong> Strava’s Sponsored Challenges currently sit in an isolated tab with terrible discovery. By injecting participatory marketing directly into the feed, Strava generates lucrative B2B revenue while creating a high psychological friction barrier to churn for the users involved in the turf wars.</li>
+  <li><strong>Technical Feasibility:</strong> The solution leverages Strava’s existing technical architecture and machine learning capabilities to evaluate 57 distinct variables automatically, ensuring the integrity of the leaderboard.</li>
+</ul>
+
+<h3 id="the-solution-club-battlegrounds">The Solution: Club Battlegrounds</h3>
+
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <div style="width: 100%; max-width: 420px; border-radius: 2.5rem; background-color: rgba(0,0,0,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 12px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);">
+    <div style="border-radius: 2rem; overflow: hidden; height: 780px; background-color: white;">
+      <iframe src="https://dairy-title-54358583.figma.site/" style="width: 100%; height: 780px; border: 0; overflow: hidden;" allowfullscreen="" loading="lazy" scrolling="yes"></iframe>
+    </div>
+  </div>
+</div>
+
+<p>I designed an interactive product solution that integrates perfectly into the native Strava feed.</p>
+
+<ul>
+  <li><strong>Peer-to-Peer Virality:</strong> Users don’t just join a challenge alone; they encounter a sponsored “Turf War” card in their core feed (e.g., <em>Nike presents: Downtown Track Club vs. Oakland Distance Runners</em>).</li>
+  <li><strong>Opt-In &amp; Execution:</strong> Once opted in, users track their physical activity. Their mileage directly impacts the live, head-to-head aggregate team score against their rivals.</li>
+  <li><strong>Algorithm Integrity:</strong> This leverages Strava’s existing technical architecture and machine learning capabilities. It utilizes the ML-enabled Leaderboard Integrity system to automatically evaluate 57 distinct variables and flag anomalous activities like e-bikes before they corrupt the team average. Furthermore, it heavily promotes the Quick Edit privacy feature to ensure vulnerable users can safely obscure their start and end locations.</li>
+</ul>
+
+<h3 id="from-discovery-to-roi">From Discovery to ROI</h3>
+
+<p>The case study walks through a 5-Step funnel mapping the user journey directly to Brand ROI:</p>
+<ol>
+  <li><strong>Discovery (The Hook):</strong> Native feed placement drives organic peer pressure.</li>
+  <li><strong>Opt-In (The Briefing):</strong> Live leaderboards and tangible rewards hook the user.</li>
+  <li><strong>Execution (The Workout):</strong> ML-validated activities ensure fair play.</li>
+  <li><strong>Validation (The Social Loop):</strong> Activities hit the public feed with exclusive banners, driving Kudos and daily active usage.</li>
+  <li><strong>Conversion (The ROI):</strong> The winning club receives a push notification driving them directly to the sponsoring brand’s e-commerce ecosystem to claim their reward.</li>
+</ol>
+
+<h3 id="go-to-market-gtm-phasing--metrics">Go-to-Market (GTM) Phasing &amp; Metrics</h3>
+
+<p>A feature this viral requires tight cross-functional alignment and a phased rollout to protect the core feed experience:</p>
+<ul>
+  <li><strong>Phase 1 (Closed Beta):</strong> Launch a hyper-local pilot in a high-density urban hub (e.g., NYC) partnering with a legacy B2B sponsor like Nike to stress-test the ML integrity engine and validate brand ROI.</li>
+  <li><strong>Phase 2 (Community Evangelism):</strong> Execute targeted outreach to Gen Z “Club Admins,” leveraging organic peer-to-peer network effects to expand into 10 new regional markets.</li>
+  <li><strong>Phase 3 (Global B2B Scale):</strong> Launch a self-serve B2B portal allowing local running shops and global brands alike to seamlessly fund turf wars, driving massive ARR expansion.</li>
+</ul>
+
+<p><strong>Key Success Metrics:</strong></p>
+<ul>
+  <li><strong>Active Club Participation Rate:</strong> The percentage of active clubs opting in, and the subsequent lift in Daily Active Users (DAU).</li>
+  <li><strong>Attributable Brand Conversion:</strong> Click-through rates to the sponsor’s checkout page and the audience growth multiplier for the brand’s native Strava Club.</li>
+  <li><strong>ML Flagging Precision:</strong> The ratio of anomalous activities successfully intercepted by the Integrity engine.</li>
+</ul>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by
+    <strong>Vijay Raghavan</strong>
+  </small>
+  <div class="container-fluid justify-content-center"><a
+    class="social mx-1"
+    href="https://www.linkedin.com/in/vijayraghavans"
+    rel="me"
+    style="color: #6c757d"
+    onMouseOver="this.style.color='#007bb5'"
+    onMouseOut="this.style.color='#6c757d'"
+  >
+    <i class="fab fa-linkedin-in fa-1x"></i>
+  </a>
+</div>
+
+</footer>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
