@@ -1,3 +1,7 @@
+---
+title: What Is App Store Optimization And Why You Should Care
+description: A primer on understanding app stores and optimizing your app for better visibility and lower acquisition costs.
+---
 Picture this, you've spent months on research and development and finally launch your app on the app store. You spend your marketing $ on ads on different channels (social media, web etc.), but all of that without consideration of how app stores work would be half baked. _Distribution matters as much as the product._
  
 In the context of product management, there are popular frameworks like [AIDA](https://en.wikipedia.org/wiki/AIDA_(marketing)) or [AIDAOR](https://www.alexandercowan.com/animating-user-acquisition-with-storyboards-in-6-steps/) - the first step of which is "Attention" or how you get your target user's attention. 

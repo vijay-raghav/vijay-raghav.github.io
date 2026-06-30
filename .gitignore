@@ -3,4 +3,5 @@
 
 # Design Files
 *.psd
-*.ai
+*.aivendor/
+vendor
