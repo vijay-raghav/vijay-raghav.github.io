@@ -3,5 +3,11 @@
 
 # Design Files
 *.psd
-*.aivendor/
-vendor
+*.ai
+
+# Vendor
+vendor/
+
+# Jekyll Build Directory
+_site/
+
