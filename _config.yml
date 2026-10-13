@@ -88,3 +88,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+
+  # Local drafts, research, and screenshots are not site content.
+  - ramp-archive

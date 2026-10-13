@@ -11,3 +11,6 @@ vendor/
 # Jekyll Build Directory
 _site/
 
+
+# Local Ramp drafts and research (keep out of commits)
+ramp-archive/
